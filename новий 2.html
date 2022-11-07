@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 align=center>Калькулятор </h2><hr>
+
+<p> 																					<b> 1) Калькулятор додавання </b>
+ <input id="first"/> + <input id="second"/> = <output id="dodavannya"/>
+ <button onclick="func()">Check results</button> <p></p>
+</p>
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("first").value);
+          var num2 = Number(document.getElementById("second").value);
+          var dodavannya = num1 + num2;
+
+          document.getElementById("dodavannya").innerHTML = dodavannya;
+          }
+ </script>
+ 
+ <p> 																				     <b> 2) Калькулятор віднімання </b>
+  <input id="first2"/> - <input id="second2"/> = <output id="vidnimannya"/>
+ <button onclick="func2()">Check results</button> <p></p>
+</p>
+ <script>
+    function func2(){
+          var num12 = Number(document.getElementById("first2").value);
+          var num22 = Number(document.getElementById("second2").value);
+          var vidnimannya = num12 - num22;
+
+          document.getElementById("vidnimannya").innerHTML = vidnimannya;
+          }
+ </script>
+ <p> 																					 <b> 3) Калькулятор множення </b>
+   <input id="first3"/>  *  <input id="second3"/> = <output id="mnozhennya"/>
+ <button onclick="func3()">Check results</button> <p></p>
+</p>
+ <script>
+    function func3(){
+          var num13 = Number(document.getElementById("first3").value);
+          var num23 = Number(document.getElementById("second3").value);
+          var mnozhennya = num13 * num23;
+
+          document.getElementById("mnozhennya").innerHTML = mnozhennya;
+          }
+ </script>
+ <p> 																					<b> 4) Кальякулятор ділення </b>
+    <input id="first5"/> / <input id="second5"/> = <output id="dilennya"/>
+ <button onclick="func5()">Check results</button> <p></p>
+</p>
+ <script>
+    function func5(){
+          var num15 = Number(document.getElementById("first5").value);
+          var num25 = Number(document.getElementById("second5").value);
+          var dilennya = num15 / num25;
+
+          document.getElementById("dilennya").innerHTML = dilennya;
+          }
+ </script>
+ </p>
+ <p> 																				<b> 5) Кальякулятор піднесення до степеня </b>
+    <input id="first4"/> x* <input id="second4"/> = <output id="xvstepenix"/>
+ <button onclick="func4()">Check results</button> <p></p>
+</p>
+ <script>
+    function func4(){
+          var num14 = Number(document.getElementById("first4").value);
+          var num24 = Number(document.getElementById("second4").value);
+          var xvstepenix =  Math.pow(num14, num24);
+
+          document.getElementById("xvstepenix").innerHTML = xvstepenix;
+          }
+ </script>
+ 
+
+ 
+</body>
+</html>
